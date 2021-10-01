@@ -1,10 +1,10 @@
 {
-    "name": "@pedidos10/template-node",
+    "name": "@darlanhms/new-world-board-bot",
     "private": true,
     "version": "1.0.0",
     "main": "src/server",
-    "repository": "https://github.com/pedidos10/pedidos10-api",
-    "author": "Dev10 <desenvolvimento@pedidos10.com.br>",
+    "repository": "https://github.com/darlanhms/new-world-board-bot",
+    "author": "darlanhms <darlanhermessjb@hotmail.com>",
     "license": "MIT",
     "engines": {
         "node": "16.6.0"
