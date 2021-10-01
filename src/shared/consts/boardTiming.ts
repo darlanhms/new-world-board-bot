@@ -1,3 +1,3 @@
-export const DEFAULT_BORDER_TIMEOUT = 30;
+export const DEFAULT_BORDER_TIMEOUT = 0.2; // minutes
 
-export const DELAY_BETWEEN_CHECKING = 15;
+export const DELAY_BETWEEN_CHECKING = 1; // seconds
