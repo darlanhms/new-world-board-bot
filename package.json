@@ -1,0 +1,46 @@
+{
+    "name": "@pedidos10/template-node",
+    "private": true,
+    "version": "1.0.0",
+    "main": "src/server",
+    "repository": "https://github.com/pedidos10/pedidos10-api",
+    "author": "Dev10 <desenvolvimento@pedidos10.com.br>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "ts-node-dev -r tsconfig-paths/register -r dotenv/config --respawn --transpile-only --ignore-watch node_modules --no-notify --poll src/server.ts",
+        "start": "cross-env NODE_ENV=production node dist/server.js",
+        "build": "tsc",
+        "test": "jest",
+        "test:dev": "jest --watch",
+        "testWithCoverage": "jest --coverage",
+        "prepare": "husky install"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cross-env": "^7.0.3",
+        "dotenv": "^9.0.2",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.11",
+        "@types/jest": "^26.0.20",
+        "@types/node": "^16.4.0",
+        "@typescript-eslint/eslint-plugin": "^3.10.0",
+        "@typescript-eslint/parser": "^3.10.0",
+        "eslint": "6.8.0",
+        "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-import-resolver-typescript": "^2.2.1",
+        "eslint-plugin-import": "^2.21.2",
+        "eslint-plugin-prettier": "^3.1.4",
+        "git-commit-msg-linter": "^3.2.6",
+        "husky": "^5.1.3",
+        "jest": "^26.6.3",
+        "lint-staged": "^10.5.4",
+        "prettier": "^2.1.0",
+        "ts-jest": "^26.5.1",
+        "ts-node": "3.3.0",
+        "ts-node-dev": "^1.1.1",
+        "typescript": "^4.1.3"
+    }
+}
