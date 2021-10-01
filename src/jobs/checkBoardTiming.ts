@@ -1,6 +1,6 @@
 import cron from 'node-cron';
 import client from '../client';
-import { DEFAULT_BORDER_TIMEOUT, DELAY_BETWEEN_CHECKING } from '../shared/consts/boardTiming';
+import { DEFAULT_BOARD_TIMEOUT, DELAY_BETWEEN_CHECKING } from '../shared/consts/boardTiming';
 import { DEFAULT_RESETED_BOARD_MESSAGE } from '../shared/consts/messages';
 import inMemoryBoardTimming from '../shared/core/inMemoryBoardTimming';
 
@@ -25,7 +25,7 @@ cron.schedule(
                         if (channel.active && discChannel?.isText()) {
                             if (channel.currentTime <= 0) {
                                 discChannel.send({ content: DEFAULT_RESETED_BOARD_MESSAGE, tts: true });
-                                channel.currentTime = DEFAULT_BORDER_TIMEOUT * 60;
+                                channel.currentTime = DEFAULT_BOARD_TIMEOUT * 60;
 
                                 console.log(`Boards reseted in ${discGuild.name}#${discChannel.name} `);
                             }

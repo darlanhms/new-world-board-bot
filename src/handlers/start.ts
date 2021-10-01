@@ -1,5 +1,5 @@
 import { Message } from 'discord.js';
-import { DEFAULT_BORDER_TIMEOUT } from '../shared/consts/boardTiming';
+import { DEFAULT_BOARD_TIMEOUT } from '../shared/consts/boardTiming';
 import inMemoryBoardTimming, { IChannel, IGuild } from '../shared/core/inMemoryBoardTimming';
 import BaseHandler from '../shared/logic/BaseHandler';
 import { Either, left, right } from '../shared/logic/Either';
@@ -27,7 +27,7 @@ export default class ActiveHandler extends BaseHandler implements Handler {
 
             timeInSeconds = timeInSecondsOrError.value;
         } else {
-            timeInSeconds = DEFAULT_BORDER_TIMEOUT * 60;
+            timeInSeconds = DEFAULT_BOARD_TIMEOUT * 60;
         }
 
         const guild = this.pushGuildIfNotExists(message.guildId as string);
@@ -38,7 +38,7 @@ export default class ActiveHandler extends BaseHandler implements Handler {
 
         return message.channel.send(
             `Alerta de quadros ativo nesse canal, tempo definido para ${
-                currentTime || `${DEFAULT_BORDER_TIMEOUT}:00`
+                currentTime || `${DEFAULT_BOARD_TIMEOUT}:00`
             }`,
         );
     }
@@ -88,7 +88,7 @@ export default class ActiveHandler extends BaseHandler implements Handler {
             const channel = {
                 id: channelId,
                 active: true,
-                currentTime: DEFAULT_BORDER_TIMEOUT,
+                currentTime: DEFAULT_BOARD_TIMEOUT,
             };
 
             guild.channels.push(channel);
