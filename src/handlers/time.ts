@@ -20,6 +20,10 @@ export default class TimeHandler implements Handler {
 
         const { channel } = channelOrError.value;
 
+        if (!channel.active) {
+            return message.reply('O bot não está ativo nesse canal :face_with_raised_eyebrow:');
+        }
+
         return message.channel.send(
             `Tempo para o reset dos quadros: ${getMinutesAndSeconds(channel.currentTime)}`,
         );
