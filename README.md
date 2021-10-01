@@ -1,2 +1,4 @@
-# Template nodejs
-Template for all nodejs applications with typescript, eslint, prettier, editorconfig, etc...
+# Board Bot
+New World Discord Bot that alerts when boards update
+
+
