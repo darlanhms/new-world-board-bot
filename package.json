@@ -6,6 +6,9 @@
     "repository": "https://github.com/pedidos10/pedidos10-api",
     "author": "Dev10 <desenvolvimento@pedidos10.com.br>",
     "license": "MIT",
+    "engines": {
+        "node": "16.6.0"
+    },
     "scripts": {
         "dev": "ts-node-dev -r tsconfig-paths/register -r dotenv/config --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
         "start": "cross-env NODE_ENV=production node dist/index.js",
