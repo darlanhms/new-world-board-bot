@@ -1,8 +1,8 @@
-import client from 'client';
 import cron from 'node-cron';
-import { DEFAULT_BORDER_TIMEOUT, DELAY_BETWEEN_CHECKING } from 'shared/consts/boardTiming';
-import { DEFAULT_RESETED_BOARD_MESSAGE } from 'shared/consts/messages';
-import inMemoryBoardTimming from 'shared/core/inMemoryBoardTimming';
+import client from '../client';
+import { DEFAULT_BORDER_TIMEOUT, DELAY_BETWEEN_CHECKING } from '../shared/consts/boardTiming';
+import { DEFAULT_RESETED_BOARD_MESSAGE } from '../shared/consts/messages';
+import inMemoryBoardTimming from '../shared/core/inMemoryBoardTimming';
 
 cron.schedule(
     // '0,15,30,45 * * * * *',

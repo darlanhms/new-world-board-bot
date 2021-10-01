@@ -17,7 +17,6 @@
         "esModuleInterop": true,
         "skipLibCheck": true,
         "removeComments": true,
-        "baseUrl": "./src",
         "noEmitOnError": true
     },
     "include": [

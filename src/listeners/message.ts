@@ -1,6 +1,6 @@
-import client from 'client';
-import handlers from 'handlers';
-import BOT_PREFIX from 'shared/consts/botPrefix';
+import client from '../client';
+import handlers from '../handlers';
+import BOT_PREFIX from '../shared/consts/botPrefix';
 
 client.on('messageCreate', message => {
     if (message.author.bot) return;

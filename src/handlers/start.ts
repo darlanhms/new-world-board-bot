@@ -1,9 +1,9 @@
 import { Message } from 'discord.js';
-import { DEFAULT_BORDER_TIMEOUT } from 'shared/consts/boardTiming';
-import inMemoryBoardTimming, { IChannel, IGuild } from 'shared/core/inMemoryBoardTimming';
-import BaseHandler from 'shared/logic/BaseHandler';
-import { Either, left, right } from 'shared/logic/Either';
-import Handler from 'shared/logic/Handler';
+import { DEFAULT_BORDER_TIMEOUT } from '../shared/consts/boardTiming';
+import inMemoryBoardTimming, { IChannel, IGuild } from '../shared/core/inMemoryBoardTimming';
+import BaseHandler from '../shared/logic/BaseHandler';
+import { Either, left, right } from '../shared/logic/Either';
+import Handler from '../shared/logic/Handler';
 
 export default class ActiveHandler extends BaseHandler implements Handler {
     command = 'start';

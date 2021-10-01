@@ -1,7 +1,7 @@
-import { DEFAULT_WAS_NOT_ACTIVATED_MESSAGE } from 'shared/consts/messages';
-import inMemoryBoardTimming, { IChannel, IGuild } from 'shared/core/inMemoryBoardTimming';
-import { Either, left, right } from 'shared/logic/Either';
-import UseCase from 'shared/logic/UseCase';
+import { DEFAULT_WAS_NOT_ACTIVATED_MESSAGE } from '../../shared/consts/messages';
+import inMemoryBoardTimming, { IChannel, IGuild } from '../../shared/core/inMemoryBoardTimming';
+import { Either, left, right } from '../../shared/logic/Either';
+import UseCase from '../../shared/logic/UseCase';
 
 interface Request {
     guildId: string;

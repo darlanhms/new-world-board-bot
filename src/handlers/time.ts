@@ -1,7 +1,7 @@
 import { Message } from 'discord.js';
-import Handler from 'shared/logic/Handler';
-import getMinutesAndSeconds from 'shared/utils/time';
-import GetGuildAndChannel from 'useCases/getGuildAndChannel/getGuildAndChannel';
+import Handler from '../shared/logic/Handler';
+import getMinutesAndSeconds from '../shared/utils/time';
+import GetGuildAndChannel from '../useCases/getGuildAndChannel/getGuildAndChannel';
 
 export default class TimeHandler implements Handler {
     command = 'time';

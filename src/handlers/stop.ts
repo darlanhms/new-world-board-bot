@@ -1,7 +1,7 @@
 import { Message } from 'discord.js';
-import Handler from 'shared/logic/Handler';
-import { DEFAULT_WAS_NOT_ACTIVATED_MESSAGE } from 'shared/consts/messages';
-import GetGuildAndChannel from 'useCases/getGuildAndChannel/getGuildAndChannel';
+import Handler from '../shared/logic/Handler';
+import { DEFAULT_WAS_NOT_ACTIVATED_MESSAGE } from '../shared/consts/messages';
+import GetGuildAndChannel from '../useCases/getGuildAndChannel/getGuildAndChannel';
 
 export default class StopHandler implements Handler {
     command = 'stop';
