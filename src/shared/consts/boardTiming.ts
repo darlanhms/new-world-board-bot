@@ -1,0 +1,3 @@
+export const DEFAULT_BORDER_TIMEOUT = 30;
+
+export const DELAY_BETWEEN_CHECKING = 15;
